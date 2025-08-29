@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../mediaqueries.css">
+    <title>Jinnie S. - I Got Your Back (2024)</title>
+</head>
+<body>
+    <!--Nav Bar-->
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Jinhee ("Jinnie") Shim</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Projects</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Nav (Hamburger) -->
+    <nav id="hamburger-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Jinhee ("Jinnie") Shim</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+                <div class="menu-links">
+                <li><a href="../../index.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="../../about.html" onclick="toggleMenu()">About</a></li> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Content-->
+    <main class="container">
+        <!--title of the project-->
+        <section class="project-title">
+            <h2>I Got Your Back (2024)</h2>
+        </section>
+
+        <!--2 col image/text overview-->
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <!--hero image-->
+                <img src="igyb_hero.JPG" alt="IGYB main image"/>
+            </div>
+            <div class="project-hero-text">
+                <!-- Project description, title, etc. -->
+                <h3>Project Description</h3>
+                <p>A mechanical recreation of a childhood game, where friends would write messages on your back and you had to focus on the feeling to get it right. What does communication look like when you use different senses? What happens when a computer and a robot arm is the intermediary?</p>
+                <h3>Technology</h3>
+                <p>robotics, serial communication, interaction design</p>
+                <h3>My Role</h3>
+                <li>code (Arduino, p5.js)</li>
+                <li>information architecture</li>
+                <li>interaction design</li>
+                <li>inverse kinematics: translating letters into motor angles</li>                
+                <h3>Collaborators</h3>
+                <p>Jiyou Park, Seungyun Yang</p>
+            </div>
+        </section>
+
+        <!--freeform content-->
+        <section class="project-media">
+
+            <div class="media-block subtitle">
+                <h3>As seen in the 2024 ITP Winter Show</h3>
+            </div>
+
+            <div class="media-block one-col-video-embed">
+                <iframe 
+                  src="https://www.youtube.com/embed/ZsXyqrq_RdM?si=9uUu0lOeYXCfcC-w" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+            </div>
+           
+            <div class="media-block one-col-video">
+                <video 
+                  autoplay 
+                  muted 
+                  loop 
+                  playsinline 
+                  preload="auto">
+                  <source src="igyb_reaction_caption and compress.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="media-block subtitle">
+                <h3>User Experience Flow</h3>
+            </div>
+
+            <div class="media-block two-col-images">
+                <img src="igyb_diagram2.png" alt="IGYB diagram" />
+                <img src="igyb_floor.jpeg" alt="IGYB floor design" />
+            </div>
+
+            <div class="media-block subtitle">
+                <h3>Screen Interaction Flow</h3>
+            </div>
+
+            <div class="media-block one-col-image">
+                <img src="igyb_screens_h.png" alt="IGYB screens" />
+            </div>
+            <small>Screen interaction</small>
+
+            <div class="media-block one-col-image">
+                <img src="igyb_screens_extra.png" alt="IGYB playtest" />
+            </div>
+            <small>Screen interactions added after a user playtest</small>
+
+            <!-- 5. 1-column text -->
+            <!-- <div class="media-block one-col-text">
+                <p>Some explanatory or narrative text here.</p>
+            </div> -->
+
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+          <p>&copy; 2025 Jinhee Shim</p>
+        </div>
+    </footer>
+
+    <!-- Javascript files -->
+    <script src="../script.js"></script>
+</body>
+</html>

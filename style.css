@@ -10,23 +10,36 @@
     --h2: 24px;
     --h3: 20px;
     --p: 16px;
+    --small: 14px;
 }
 
-html{
+html, body {
+    height: 100%;          /* Make them take full viewport height */
+    margin: 0;             /* Remove default margins */
     scroll-behavior: smooth;
 }
 
-body{
+body {
+    display: flex;
+    flex-direction: column;
     font-family: var(--ff);
     color: var(--colorprimary);
     background-color: var(--colorsecondary);
 }
 
-/* general */
+main {
+    flex: 1;               /* This pushes the footer to the bottom */
+}
+
 .container {
     /* max-width: 1000px; */
     margin: 0 auto;
     padding: 0.5rem 2.5rem;
+}
+
+main.container {
+    margin: 0;
+    padding: 0 2.5rem;
 }
 
 #desktop-nav .container,
@@ -34,7 +47,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2.5rem; /* consistent with your main container */
 }
 
 /* Desktop Navbar */
@@ -62,8 +74,7 @@ nav .nav-links a:hover{
     text-decoration-skip-ink: none;
 }
 
-
-/* Hamburger Menu */
+/* Mobile Nav */
 #hamburger-nav{
     display: none;
 }
@@ -154,12 +165,12 @@ nav .nav-links a:hover{
   
 .project-text h2 {
     margin: 0.3rem 0.2rem;
-    font-size: var(--h2);
+    /* font-size: var(--h2); */
 }
   
 .project-text p {
     margin: 0 0.2rem;
-    font-size: var(--p);
+    /* font-size: var(--p); */
     color: var(--colorsubtext);
 }
 
@@ -172,3 +183,162 @@ footer {
     font-size: 0.9rem;
     margin-top: 2rem; /* spacing from main content */
 }
+
+/* about page */
+.about-hero {
+    display: flex;
+    flex-wrap: wrap; /* allows them to stack if too narrow */
+    align-items: flex-start; /* keeps them aligned at the top */
+}
+  
+.about-hero-image, 
+.about-hero-text {
+    flex: 0 0 50%; /* always take 50% each, no shrinking */
+    box-sizing: border-box; /* include padding in width */
+    padding: 1rem;
+}
+  
+.about-hero-image img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.about-hero-text a{
+    text-decoration: none;
+    color: var(--colorprimary);
+}
+
+
+.about-hero-text a:hover{
+    text-decoration: underline; /* show underline only on hover */
+}
+
+@media (max-width: 768px) {
+    .about-hero-image, 
+    .about-hero-text {
+      flex: 0 0 100%; /* stack vertically on smaller screens */
+    }
+}
+
+/* project detail pages */
+.project-hero {
+    display: flex;
+    flex-wrap: wrap; /* allows them to stack if too narrow */
+    align-items: flex-start; /* keeps them aligned at the top */
+}
+  
+.project-hero-image, 
+.project-hero-text {
+    flex: 0 0 50%; /* always take 50% each, no shrinking */
+    box-sizing: border-box; /* include padding in width */
+    padding: 1rem;
+}
+  
+.project-hero-image img {
+    max-width: 100%;
+    /* height: auto; */
+    height: 80vh; /* 80% of viewport height */
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+  
+/* Stack media on smaller screens */
+@media (max-width: 768px) {
+    .project-hero-image, 
+    .project-hero-text {
+      flex: 0 0 100%; /* stack vertically on smaller screens */
+    }
+}
+ 
+.subtitle {
+    margin: 2.5rem auto 0.5rem; 
+}
+
+/* Project block: single column blocks */
+.one-col-image img,
+.one-col-text p {
+    width: 100%;
+    /* max-height: 450px; */
+    /* max-width: 800px;  optional max width */
+    margin: 1.5rem auto 0.5rem; 
+    display: block;
+}
+
+.one-col-video-embed {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+    margin: 1.5rem auto 0.5rem;
+}
+
+.one-col-video-embed  iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* .one-col-image small {
+    margin: 0 auto 0.5rem; 
+} */
+
+.one-col-video video {
+    height: auto;
+    max-height: 450px;
+    /* margin: 1.5rem auto 0.5rem;  */
+    /* display: block; */
+}
+
+/* Project block: multiple column blocks */
+.two-col-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.5rem auto 0.5rem; 
+}
+
+.three-col-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem auto 0.5rem; 
+}
+
+.two-col-images img,
+.three-col-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* .two-col-images,
+.three-col-images {
+  display: flex;
+  gap: 1rem; 
+  align-items: stretch; 
+  margin: 1.5rem auto 0.5rem; 
+}
+
+.two-col-images img,
+.three-col-images img {
+  height: 60vh; 
+  width: auto;   
+  object-fit: cover; 
+} */
+  
+/* Stack images on smaller screens */
+@media (max-width: 768px) {
+    .two-col-images,
+    .three-col-images {
+        grid-template-columns: 1fr;
+    }
+}
+  

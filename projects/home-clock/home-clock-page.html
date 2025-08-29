@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../mediaqueries.css">
+    <title>Jinnie S. - Where I Call Home Clock (2025)</title>
+</head>
+<body>
+        <!--Nav Bar-->
+        <!-- Desktop Nav -->
+        <nav id="desktop-nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Jinhee ("Jinnie") Shim</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Projects</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Nav (Hamburger) -->
+        <nav id="hamburger-nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Jinhee ("Jinnie") Shim</a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+                    <div class="menu-links">
+                    <li><a href="../../index.html" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../../about.html" onclick="toggleMenu()">About</a></li> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!--Main Content-->
+    <main class="container">
+        <!--title of the project-->
+        <section class="project-title">
+            <h1>Where I Call Home Clock (2025)</h1>
+        </section>
+
+        <!--2 col image/text overview-->
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <!--hero image-->
+                <img src="home clock top.jpg" alt=""/>
+            </div>
+            <div class="project-hero-text">
+                <!-- Project description, title, etc. -->
+                <h3>Project Description</h3>
+                <p>The time, day, and weather information of two cities is updated every 5 minutes, provided via the OpenWeather API. The black & white colors of the e-ink screen represent nighttime and daytime in the cities. This data that fits neatly in a 2" screen is concise, but powerful predictors outlining what it's like in that city right now.</p>
+                <p>Designed to be a useful desk clock providing a quick overview of the two cities that I'm currently involved with, this is also an autobiographical piece exploring what "home" means to me -- a state that is plural, transitory, and relational. The beads and cities can be switched out when there is a change of circumstances.</p>
+                <h3>Technology </h3>
+                <p>API communication, wifi, low power design</p>
+                <h3>Materials</h3>
+                <p>ESP-32, e-ink display, 9V battery, circuit, acrylic, letter beads</p>
+                <!-- <h3>Dimensions</h3>
+                <p></p>             -->
+            </div>
+        </section>
+
+        <!--freeform content-->
+        <section class="project-media">
+
+            <div class="media-block three-col-images">
+                <img src="home clock 45.png" alt="Image 1" />
+                <img src="home clock left.png" alt="Image 2" />
+                <img src="home clock 225.png" alt="Image 3" />
+            </div>
+
+            <div class="media-block subtitle">
+                <h3>Updating Screen</h3>
+            </div>
+
+            <div class="media-block one-col-video">
+                <video 
+                  autoplay 
+                  muted 
+                  loop 
+                  playsinline 
+                  preload="auto">
+                  <source src="home clock-update.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- <div class="media-block subtitle">
+                <h3>Room For Improvement</h3>
+            </div>
+            <div class="media-block one-col-text">
+                <p></p>
+            </div> -->
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+          <p>&copy; 2025 Jinhee Shim</p>
+        </div>
+    </footer>
+
+    <!-- Javascript files -->
+    <script src="../script.js"></script>
+</body>
+</html>

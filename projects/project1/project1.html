@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../mediaqueries.css">
+    <title>ProjectName</title>
+</head>
+<body>
+        <!--Nav Bar-->
+        <!-- Desktop Nav -->
+        <nav id="desktop-nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Jinhee ("Jinnie") Shim</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Projects</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Nav (Hamburger) -->
+        <nav id="hamburger-nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Jinhee ("Jinnie") Shim</a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+                    <div class="menu-links">
+                    <li><a href="../../index.html" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../../about.html" onclick="toggleMenu()">About</a></li> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!--Main Content-->
+    <main class="container">
+        <!--title of the project-->
+        <section class="project-title">
+            <h1>Project Title</h1>
+        </section>
+
+        <!--2 col image/text overview-->
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <!--hero image-->
+                <img src="IMG_9833.JPG" alt=""/>
+            </div>
+            <div class="project-hero-text">
+                <!-- Project description, title, etc. -->
+                <h3>Project Description</h3>
+                <p>Description of the project goes here. Keep it to three sentences max.</p>
+                <h3>My Role</h3>
+                <p>Description of my role in the project.</p>
+                <h3>Collaborators</h3>
+                <p>Collaboratos in the project.</p>
+                <h3>Technology Used</h3>
+                <li>Technology used in the project.</li>
+                <li>Technology used in the project.</li>
+                <li>Technology used in the project.</li>
+            </div>
+        </section>
+
+        <!--freeform content-->
+        <section class="project-media">
+
+            <!-- 1. 3-column images -->
+            <div class="media-block three-col-images">
+                <img src="IMG_9833.JPG" alt="Image 1" />
+                <img src="IMG_9833.JPG" alt="Image 2" />
+                <img src="IMG_9833.JPG" alt="Image 3" />
+            </div>
+
+            <!-- 2. 1-column image -->
+            <div class="media-block one-col-image">
+                <img src="IMG_9833.JPG" alt="Single Image" />
+            </div>
+
+            <!-- 3. 1-column video -->
+            <div class="media-block one-col-video">
+                <video controls src="IMG_9834.MOV"></video>
+            </div>
+
+            <!-- 4. 1-column embedded link (YouTube example) -->
+            <div class="media-block one-col-embed">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hjoloGGcjfM&si=0UsUyHHL1mBshn1j" 
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- 5. 1-column text -->
+            <div class="media-block one-col-text">
+                <p>Some explanatory or narrative text here.</p>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+          <p>&copy; 2025 Jinhee Shim</p>
+        </div>
+    </footer>
+
+    <!-- Javascript files -->
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Jinnie S. - About</title>
 </head>
 <body>
-    <h1>WIP</h1>
+    <!--Nav Bar-->
+        <!-- Desktop Nav -->
+        <nav id="desktop-nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Jinhee ("Jinnie") Shim</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Nav (Hamburger) -->
+        <nav id="hamburger-nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Jinhee ("Jinnie") Shim</a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+                    <div class="menu-links">
+                    <li><a href="/" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="/about.html" onclick="toggleMenu()">About</a></li> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!--Main Content-->
+    <main class="container">
+        <!--2 col image/text overview-->
+        <section class="about-hero">
+            <div class="about-hero-image">
+                <!--hero image-->
+                <img src="about jinnie.png" alt=""/>
+            </div>
+            <div class="about-hero-text">
+                <!-- Project description, title, etc. -->
+                <h3>Hi there! 👋🏻</h3>
+                <p>My name is Jinhee — like “Jinnie,” with a quieter ‘h’.</p>
+                <p>
+                    I grew up in Seoul and spent a few years working as a product manager in Korea’s startup scene. 
+                    Now I’m in Brooklyn, experimenting with technology and imagination at 
+                    <a href="https://itp.nyu.edu/itp/" target="_blank" rel="noopener noreferrer">NYU ITP</a>.
+                </p>                
+                <p>Through my work, I explore how technology can highlight the little joys of everyday life and open new ways for people to connect.</p>
+                <p>Outside of work, I’m usually at the ballet studio, exploring movement and expression.</p>
+                
+                <h3>Let's Connect! 💌</h3>
+                <p>
+                    <a href="mailto:js14398@nyu.edu">Email</a>
+                    |
+                    <a href="http://bit.ly/45uwZTU">resume/CV</a>
+                    |
+                    <a href="https://www.linkedin.com/in/jinhee-shim-6729b4139/">LinkedIn</a>
+                    |
+                    <a href="https://www.instagram.com/jinhee.727/">instagram</a>
+                </p>
+                
+                
+            </div>
+        </section>    
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+          <p>&copy; 2025 Jinhee Shim</p>
+        </div>
+    </footer>
+
+    <!-- Javascript files -->
+    <script src="script.js"></script>
 </body>
 </html>
