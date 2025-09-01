@@ -79,6 +79,11 @@ nav .nav-links a:hover{
     display: none;
 }
 
+#hamburger-nav .container {
+    margin: 0;
+    width: 100%;
+}
+
 .hamburger-menu{
     position: relative;
     display: inline-block;
@@ -88,9 +93,9 @@ nav .nav-links a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px;
-    width: 30px;
+    font-size: 1.5rem;
     cursor: pointer;
+    user-select: none;
 }
 
 .hamburger-icon span{
@@ -109,6 +114,7 @@ nav .nav-links a:hover{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .menu-links a{
