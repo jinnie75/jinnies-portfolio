@@ -159,7 +159,7 @@ nav .nav-links a:hover{
     border: 15px solid var(--colorhighlight);
 }
 
-.project img{
+.project img {
     width: 100%;
     display: block;
     /* border-radius: 8px; */
