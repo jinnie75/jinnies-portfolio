@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../mediaqueries.css">
+    <title>Jinnie S. - This free light... (2025)</title>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html">Jinhee ("Jinnie") Shim</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Projects</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Nav (Hamburger) -->
+    <nav id="hamburger-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html">Jinhee ("Jinnie") Shim</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+                <div class="menu-links">
+                    <li><a href="../../index.html" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../../about.html" onclick="toggleMenu()">About</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Content-->
+    <main class="container">
+        <!--title of the project-->
+        <section class="project-title">
+            <h1>This free light... (2025)</h1>
+        </section>
+
+        <!--2 col image/text overview-->
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <!--hero image-->
+                <img src="https://pub-fb75cb6249f34e08a0a4ff70bc8bccdb.r2.dev/this-free-light/flashlight-hero.jpg"
+                    alt="" />
+            </div>
+            <div class="project-hero-text">
+                <!-- Project description, title, etc. -->
+                <h3>Project Description</h3>
+                <p>A tactical flashlight that only emits light after a number of advertisements are played. Tactical
+                    flashlights are very strong flashlights that are often used for self-defense or law enforcement
+                    purposes.</p>
+                <p>In a world where our attention is commoditised and traded for money, where do we draw the line?</p>
+                <p>This piece was featured in the [Ars Machina · Corpus Digitum] exhibition, held at the South River Art
+                    Studios (Georgia, Atlanta) from 10/17 to 10/26, 2025.</p>
+                <h3>Materials</h3>
+                <p>parts from a tactical flashlight, ESP 32, audio amplifier circuit, speaker, 3D printed plastic,
+                    powerbank</p>
+                <h3>Collaborators</h3>
+                <p>Audrey Oh</p>
+            </div>
+        </section>
+
+        <!--freeform content-->
+        <section class="project-media">
+            <div class="media-block subtitle">
+                <h3>Click Play!</h3>
+            </div>
+
+            <!-- 4. 1-column embedded link (YouTube example) -->
+            <div class="media-block one-col-video-embed">
+                <iframe width="358" height="636" src="https://www.youtube.com/embed/85HAM4E_WQ8"
+                    title="This free light is brought to you by" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- <div class="media-block one-col-video">
+                <video autoplay muted loop playsinline preload="auto" controlslist="nodownload">
+                    <source
+                        src="https://pub-fb75cb6249f34e08a0a4ff70bc8bccdb.r2.dev/this-free-light/flashlight-mov-1080.mp4"
+                        type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+
+            <div class="media-block subtitle">
+                <h3>Detail</h3>
+            </div>
+
+            <!-- 1. 3-column images -->
+            <div class="media-block three-col-images">
+                <img src="https://pub-fb75cb6249f34e08a0a4ff70bc8bccdb.r2.dev/this-free-light/flashlight-detail1.jpg"
+                    alt="Image 1" />
+                <img src="https://pub-fb75cb6249f34e08a0a4ff70bc8bccdb.r2.dev/this-free-light/flashlight-detail2.jpg"
+                    alt="Image 2" />
+                <img src="https://pub-fb75cb6249f34e08a0a4ff70bc8bccdb.r2.dev/this-free-light/flashlight-detail3.jpg"
+                    alt="Image 3" />
+            </div>
+
+            <!-- 5. 1-column text -->
+            <div class="media-block one-col-text">
+                <p>The advertisements used in this piece were sourced from real advertisements found on the Meta Ads
+                    Library.</p>
+            </div>
+        </section>
+
+        <nav class="project-pagination" aria-label="Project navigation">
+            <a class="project-pagination__prev" href="find-a-tree-page.html">
+                <span class="arrow" aria-hidden="true">←</span>
+                <span class="label">Prev: Find a tree, carve a hole</span>
+            </a>
+
+            <a class="project-pagination__home" href="../../index.html">Back to Main</a>
+
+            <a class="project-pagination__next" href="igyb-page.html">
+                <span class="label">Next: I Got Your Back</span>
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
+        </nav>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jinhee Shim</p>
+        </div>
+    </footer>
+
+    <!-- Javascript files -->
+    <script src="../../script.js"></script>
+</body>
+
+</html>
