@@ -139,6 +139,73 @@ nav .nav-links a:hover {
 }
 
 /* home - main content */
+.home-intro {
+    margin: 0 0 1rem;
+    color: var(--colorsubtext);
+    font-size: var(--h2);
+    font-style: italic;
+
+}
+
+.highlight-underline {
+    position: relative;
+    text-decoration: none;
+    /* turn off the native underline */
+}
+
+.highlight-underline::after {
+    content: "";
+    position: absolute;
+    left: -0.05em;
+    right: -0.05em;
+    bottom: 0.08em;
+    height: 0.55em;
+    background: var(--colorhighlight);
+    z-index: -1;
+    opacity: 0.85;
+
+    transform-origin: left center;
+    animation: organicBlink 2.8s infinite;
+}
+
+/* irregular: long “on”, quick flickers, slight movement */
+@keyframes organicBlink {
+    0% {
+        opacity: .85;
+        transform: translateY(0) scaleX(1);
+    }
+
+    38% {
+        opacity: .85;
+        transform: translateY(0) scaleX(1);
+    }
+
+    44% {
+        opacity: .15;
+        transform: translateY(1px) scaleX(.98);
+    }
+
+    50% {
+        opacity: .75;
+        transform: translateY(0) scaleX(1);
+    }
+
+    56% {
+        opacity: .25;
+        transform: translateY(1px) scaleX(.99);
+    }
+
+    62% {
+        opacity: .85;
+        transform: translateY(0) scaleX(1);
+    }
+
+    100% {
+        opacity: .85;
+        transform: translateY(0) scaleX(1);
+    }
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
